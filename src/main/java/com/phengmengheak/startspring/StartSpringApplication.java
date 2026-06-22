@@ -9,7 +9,7 @@ public class StartSpringApplication {
 
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(StartSpringApplication.class, args);
-        var orderService = context.getBean(OrderService.class);
-        orderService.placeOrder();
+        var notificationService = context.getBean(NotificationManager.class);
+        notificationService.sendNotification("Testing IoC");
     }
 }
