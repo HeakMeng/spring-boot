@@ -6,6 +6,10 @@ public class OrderService {
         this.paymentService = paymentService;
     }
 
+    public void setPaymentService(PaymentService paymentService){
+        this.paymentService = paymentService;
+    }
+
     public void placeOrder(){
         var payment = new PayPalPaymentService();
         payment.processPayment(10);
