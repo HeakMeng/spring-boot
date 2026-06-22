@@ -1,5 +1,7 @@
 package com.phengmengheak.startspring;
 
+import org.springframework.stereotype.Service;
+
 public class StripePaymentService implements PaymentService {
     @Override
     public void processPayment(double amount){
