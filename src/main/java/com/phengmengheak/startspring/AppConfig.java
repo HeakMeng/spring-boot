@@ -21,9 +21,9 @@ public class AppConfig {
 
     @Bean
     public OrderService orderService(){
-        if(paymentGateway.equals("paypal")){
-            return new OrderService(paypal());
+        if(paymentGateway.equals("stripe")){
+            return new OrderService(stripe());
         }
-        return new OrderService(stripe());
+        return new OrderService(paypal());
     }
 }

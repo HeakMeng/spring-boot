@@ -1,6 +1,10 @@
 spring:
   application:
-    name: store
+    name: start-spring
+  datasource:
+    url: jdbc:postgresql://localhost:5432/store
+    username: postgres
+    password: Pa55w.rd
 stripe:
   apiUrl: https://api.stripe.com
   timeout: 1000

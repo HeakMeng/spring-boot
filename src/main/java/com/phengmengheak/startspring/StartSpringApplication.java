@@ -9,7 +9,8 @@ public class StartSpringApplication {
 
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(StartSpringApplication.class, args);
-        var notificationService = context.getBean(NotificationManager.class);
-        notificationService.sendNotification("Testing IoC");
+        var resource = context.getBean(HeavyResource.class);
+//        var notificationSe    rvice = context.getBean(NotificationManager.class);
+//        notificationService.sendNotification("Testing IoC");
     }
 }
